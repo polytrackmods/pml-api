@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "allowJs": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "es2020",
+        "baseUrl": ".",
+        "paths": {
+            "https://pml.orangy.cfd/PolyTrackMods/PolyModLoader/0.5.0/PolyModLoader.js": [
+                "types/050/PolyModLoader.d.ts"
+            ]
+        }
+    },
+    "include": ["0.0.1/**/*.js", "types/**/*.d.ts"]
+}
