@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Base class for all polytrack mods. Mods should export an instance of their mod class named `polyMod` in their main file.
  */
