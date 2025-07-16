@@ -6,4 +6,4 @@ A lightweight, modular framework that provides core hooks, utilities, and extens
 
 ## Importing the API
 
-Import the following URL into PML `https://pml.orangy.cfd/polytrackmods/pml-api/main/dist`.
+Import the following URL into PML `https://pml.orangy.cfd/polytrackmods/pml-api/main/dist/release`.

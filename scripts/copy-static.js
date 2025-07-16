@@ -8,7 +8,13 @@ async function copyFile(src, dest) {
 
 async function copyProjectFiles() {
     const rootDir = process.cwd();
-    const distDir = path.join(rootDir, "dist");
+    let distDir = path.join(rootDir, "dist");
+
+    if (process.argv.includes("--debug")) {
+        distDir = path.join(rootDir, "dist", "debug");
+    } else {
+        distDir = path.join(rootDir, "dist", "release");
+    }
 
     // 1. Copy polylib.json and latest.json to dist/
     for (const file of ["polylib.json", "latest.json"]) {

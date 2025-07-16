@@ -7,7 +7,9 @@
         "format": "prettier --write .",
         "lint": "eslint .",
         "build:pml:types": "node ./scripts/build-pml-types.js",
-        "build": "tsc && rimraf ./dist/types && node ./scripts/copy-static.js && node ./scripts/bundle-dist.js"
+        "build": "tsc && rimraf ./dist/types && node ./scripts/copy-static.js && node ./scripts/bundle-dist.js --minify",
+        "build:debug": "tsc && rimraf ./dist/types && node ./scripts/copy-static.js --debug && node ./scripts/bundle-dist.js",
+        "build:all": "pnpm build && pnpm build:debug"
     },
     "keywords": [
         "polytrack",
